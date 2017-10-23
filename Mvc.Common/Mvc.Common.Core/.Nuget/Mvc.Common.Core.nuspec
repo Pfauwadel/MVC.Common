@@ -1,0 +1,21 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MVC.Common.Core</id>
+    <version>$version$</version>
+    <authors>Pfauwadel Damien</authors>
+    <owners>Pfauwadel Damien</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MVC.Common.Core</description>
+    <releaseNotes>First implementation with nuget</releaseNotes>
+    <copyright>Copyright © PFAUWADEL</copyright>
+    <dependencies>
+      <dependency id="jQuery" version="[3.2.1]" />
+	  <dependency id="bootbox" version="[4.3.0]" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Content\img\ajax-loader.gif" target="content\Content\img" />
+    <file src="..\Script\*.js" target="content\Scripts" />
+  </files>
+</package>
