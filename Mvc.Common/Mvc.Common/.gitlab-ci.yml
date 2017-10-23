@@ -1,0 +1,15 @@
+﻿stages:
+  - build
+
+before_script:
+  - 'nuget restore Mvc.Common.sln'
+
+build:
+ stage: build
+ script:
+  - 'msbuild Mvc.Common.sln /t:Clean,ReBuild /p:Configuration=Debug;Platform="Any CPU"'
+  - 'msbuild Mvc.Common.sln /t:ReBuild /p:Configuration=Release;Platform="Any CPU"'
+  - 'nuget pack "Mvc.Common/Mvc.Common.csproj" -IncludeReferencedProjects -Build -Properties Configuration=Release -Version 0.0.1.%CI_BUILD_ID%'
+  - 'nuget push \*.nupkg 8921a371-c231-4d11-bca4-28c86e1b1122 -Source https://www.myget.org/F/potential-spoon-bear/api/v2/package'
+ only:
+   - master
