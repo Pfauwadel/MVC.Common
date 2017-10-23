@@ -1,0 +1,24 @@
+﻿<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>MVC.Common</id>
+    <version>$version$</version>
+    <authors>Pfauwadel Damien</authors>
+    <owners>Pfauwadel Damien</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>MVC.Common</description>
+    <releaseNotes>First implementation with nuget</releaseNotes>
+    <copyright>Copyright © PFAUWADEL</copyright>
+    <dependencies>
+      <dependency id="KUHN.ASP.MVC"  version="[2017.9.28.1,2018)" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Images\KuhnLogo.png" target="content\Images" />
+    <file src="..\Parameters\*.cs" target="content\Parameters" />
+    <file src="..\Service\*.cs" target="content\Service" />
+    <file src="..\Web.Config.Transform" target="content\Web.Config.Transform" />
+    <file src="..\Views\Web.Config.Transform" target="content\Views\Web.Config.Transform" />
+    <file src="..\Views\Shared\*.cshtml" target="content\Views\Shared" />
+  </files>
+</package>
