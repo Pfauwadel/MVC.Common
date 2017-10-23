@@ -10,15 +10,12 @@
     <releaseNotes>First implementation with nuget</releaseNotes>
     <copyright>Copyright © PFAUWADEL</copyright>
     <dependencies>
-      <dependency id="KUHN.ASP.MVC"  version="[2017.9.28.1,2018)" />
+      <dependency id="jQuery" version="[3.2.1]" />
+	  <dependency id="bootbox" version="[4.3.0]" />
     </dependencies>
   </metadata>
   <files>
-    <file src="..\Images\KuhnLogo.png" target="content\Images" />
-    <file src="..\Parameters\*.cs" target="content\Parameters" />
-    <file src="..\Service\*.cs" target="content\Service" />
-    <file src="..\Web.Config.Transform" target="content\Web.Config.Transform" />
-    <file src="..\Views\Web.Config.Transform" target="content\Views\Web.Config.Transform" />
-    <file src="..\Views\Shared\*.cshtml" target="content\Views\Shared" />
+    <file src="..\Content\img\ajax-loader.gif" target="content\Content\img" />
+    <file src="..\Script\*.js" target="content\Scripts" />
   </files>
 </package>
